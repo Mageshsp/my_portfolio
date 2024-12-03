@@ -1,0 +1,39 @@
+/* Footer Styling */
+footer.contact {
+    /* background-color: #85a3df; */
+    /* background-color: #f8f9f8; */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heading Style */
+  footer .heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Email Link */
+  footer .email {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #61dafb;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 5px;
+  }
+  
+  footer .email:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 1.5rem var(--main-color);
+  }
+  
+  /* Phone Number */
+  footer .phone {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #6e6b6b;
+  }

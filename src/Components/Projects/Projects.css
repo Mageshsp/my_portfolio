@@ -1,0 +1,84 @@
+.works img{
+    width: 300px;
+    height: 250px;
+  }
+  .project-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between project boxes */
+  }
+  
+  .project-box {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Ensures no content goes outside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .project-box:hover {
+    transform: scale(1.05); /* Slightly zooms the box */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .works {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* Smooth image transition */
+  }
+  
+  .project-box:hover .works {
+    transform: scale(1.1); /* Zoom the image on hover */
+  }
+  
+  .project-details {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8); 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease; /* Smooth fade and slide-up effect */
+    transform: translateY(100%); /* Slide-up effect initially */
+  }
+  
+  .project-box:hover .project-details {
+    opacity: 1;
+    transform: translateY(0); /* Slides up the details */
+  }
+  
+  .project-details h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight:800;
+    color: #333;
+  }
+  
+  .project-details p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .project-details a {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 5px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-details a:hover {
+    background: #555;
+  }
